@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'mamatha0124/python-app' // Docker image name
+        DOCKER_IMAGE = 'mamatha0124/python-app:latest' // Docker image name
          K8S_NAMESPACE = 'default' // Adjust if using a different Kubernetes namespace
         DEPLOYMENT_YAML = 'deployment.yaml' // Path to your deployment.yaml file
         SERVICE_YAML = 'service.yaml' // Path to your service.yaml file
